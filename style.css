@@ -1,4 +1,8 @@
 
+        .body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
         /* ejercicio de selectores */
         .caja {
         /* propiedades especiales que se heredan */
@@ -72,7 +76,54 @@
     }
 
     .transformaciones {
+        /* primera letra de cada palabra en mayuscula */
 
         text-transform: lowercase;
 
     }
+
+    .espaciado-de-textos {
+
+        /* modifica el espacio entre cada linea de texto */
+        line-height: 25px;
+        /* espacio entre las letras */
+        letter-spacing: 3px;
+        /* espacio entre palabras */
+        word-spacing: 20px;
+
+    }
+
+    .grosor-letra {
+        /* el valor del grossor se puede manejar en un rango de 0-900 */
+        font-weight: lighter;
+    }
+
+
+
+
+
+
+
+    /* practica del 30 abril */
+     .dodo-imagen {
+        width: 200px;
+     }
+
+     .cuadricula {
+        outline: 1px solid blue;
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+        justify-items: flex-end;
+        align-items: flex-start;
+     }
+
+     .uno {
+        object-fit: cover;
+        grid-column: 1/3;
+        grid-row: 1/4;
+        justify-self: flex-start;
+        align-self: center;
+     }
+     
